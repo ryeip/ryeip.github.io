@@ -1,0 +1,17 @@
+{
+  "name": "ryeip-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && git add -A && git commit -m 'Deploy' && git push"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.0",
+    "svelte": "^4.2.0",
+    "vite": "^4.4.0"
+  }
+}
