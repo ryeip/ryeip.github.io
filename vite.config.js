@@ -7,5 +7,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
   },
-  base: '/ryeip.github.io/',
+  // For user/organization Pages (repo named <username>.github.io), base must be '/'
+  // If you later use a project repo, change this to '/<repo-name>/'
+  base: '/',
 });
