@@ -1,67 +1,120 @@
+<script>
+  import nameLogo from '../lib/svg/namelogo_outline.svg';
+
+  const topTags = ['Editing', 'Data Visualization'];
+  const bottomTags = ['Design', 'Writing', 'Data Analysis', 'Interactive Storytelling'];
+  const placeholderSrc = '/images/default/placeholder.png';
+</script>
+
 <section class="hero">
-  <div class="hero-content">
-    <h1>Randy Yeip</h1>
-    <p class="tagline">
-      Data visualization • Writing • Design • Editing • Data analysis • Interactive storytelling
-    </p>
-    <a href="#projects" class="cta-button">View My Work</a>
+  <div class="copy">
+    <div class="name-mark">
+      <img src={nameLogo} alt="Randy Yeip wordmark" loading="lazy" />
+    </div>
+
+    <div class="tags">
+      <div class="row">
+        {#each topTags as tag}
+          <span class="tag">{tag}</span>
+        {/each}
+      </div>
+      <div class="row">
+        {#each bottomTags as tag}
+          <span class="tag">{tag}</span>
+        {/each}
+      </div>
+    </div>
+  </div>
+
+  <div class="visual">
+    <img src={placeholderSrc} alt="Portfolio visual placeholder" loading="lazy" />
   </div>
 </section>
 
 <style>
   .hero {
-    padding: 6rem 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    margin: 0 -20px;
+    background: #f7f7f7;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    margin: 24px 0;
+    padding: 48px clamp(20px, 5vw, 64px);
+    display: grid;
+    grid-template-columns: minmax(320px, 1.05fr) minmax(280px, 0.95fr);
+    align-items: center;
+    gap: clamp(24px, 6vw, 72px);
   }
 
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+  .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
   }
 
-  h1 {
-    font-size: 3.5rem;
-    margin: 0 0 1rem 0;
-    font-weight: 700;
+  .name-mark img {
+    max-width: min(520px, 100%);
+    height: auto;
+    display: block;
   }
 
-  .tagline {
-    font-size: 1.25rem;
-    margin: 0 0 2rem 0;
-    opacity: 0.95;
-    line-height: 1.6;
+  .tags {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: white;
-    color: #667eea;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
   }
 
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  .tag {
+    font-family: 'Metric', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4a4a4a;
   }
 
-  @media (max-width: 768px) {
+  .visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .visual img {
+    width: min(480px, 100%);
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
+  }
+
+  @media (max-width: 900px) {
     .hero {
-      padding: 3rem 20px;
+      grid-template-columns: 1fr;
+      padding: 36px clamp(20px, 6vw, 48px);
     }
 
-    h1 {
-      font-size: 2.5rem;
+    .visual {
+      order: -1;
     }
 
-    .tagline {
-      font-size: 1rem;
+    .visual img {
+      width: min(420px, 100%);
+    }
+  }
+
+  @media (max-width: 540px) {
+    .tags {
+      gap: 10px;
+    }
+
+    .row {
+      gap: 10px;
+    }
+
+    .tag {
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
     }
   }
 </style>

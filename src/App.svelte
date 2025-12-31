@@ -17,16 +17,16 @@
 <Footer />
 
 <style global>
+  @import './lib/styles/fonts/fonts.css';
+
   :global(body) {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'Metric', 'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fafafa;
-    color: #333;
+    background-color: #f4f4f4;
+    color: #2d2d2d;
   }
 
   :global(html) {
@@ -36,6 +36,6 @@
   main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 40px;
   }
 </style>
