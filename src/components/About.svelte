@@ -16,7 +16,7 @@
 <style>
   .about {
     padding: 4rem 20px;
-    background-color: white;
+    background-color: #f8f8f8;
     margin: 0 -20px;
   }
 
@@ -28,14 +28,14 @@
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #918f8f;
   }
 
   p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #918f8f;
   }
 
   @media (max-width: 768px) {

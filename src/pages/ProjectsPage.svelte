@@ -1,50 +1,71 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
+  import Header from '../components/Header.svelte';
+  import Footer from '../components/Footer.svelte';
+
+  const dispatch = createEventDispatcher();
+
+  function handleNavigate(page) {
+    dispatch('navigate', page);
+  }
+
   const projects = [
     {
       id: 1,
       title: 'Project One',
       description: 'An interactive data visualization project showcasing trends and patterns.',
       tags: ['Data Viz', 'Interactive', 'D3.js'],
-      link: '#projects'
+      link: '#'
     },
     {
       id: 2,
       title: 'Project Two',
       description: 'A comprehensive case study on visual design principles.',
       tags: ['Design', 'Case Study', 'UX'],
-      link: '#projects'
+      link: '#'
     },
     {
       id: 3,
       title: 'Project Three',
       description: 'An interactive storytelling experience combining data and narrative.',
       tags: ['Storytelling', 'Data', 'Web'],
-      link: '#projects'
+      link: '#'
     }
   ];
 </script>
 
-<section id="projects" class="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      {#each projects as project (project.id)}
-        <div class="project-card">
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <div class="tags">
-            {#each project.tags as tag}
-              <span class="tag">{tag}</span>
-            {/each}
+<Header currentPage="projects" on:navigate={(e) => handleNavigate(e.detail)} />
+<main>
+  <section class="projects">
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        {#each projects as project (project.id)}
+          <div class="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div class="tags">
+              {#each project.tags as tag}
+                <span class="tag">{tag}</span>
+              {/each}
+            </div>
+            <a href={project.link} class="project-link">View Project →</a>
           </div>
-          <a href={project.link} class="project-link">View Project →</a>
-        </div>
-      {/each}
+        {/each}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
+<Footer />
 
 <style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    min-height: calc(100vh - 200px);
+  }
+
   .projects {
     padding: 4rem 20px;
     background-color: #f8f8f8;
@@ -56,11 +77,11 @@
     margin: 0 auto;
   }
 
-  h2 {
+  h1 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-align: center;
-    color: #918f8f;
+    color: #0a0a0a;
   }
 
   .projects-grid {
@@ -85,7 +106,7 @@
   h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #918f8f;
+    color: #0a0a0a;
   }
 
   p {
@@ -127,7 +148,7 @@
       padding: 2rem 20px;
     }
 
-    h2 {
+    h1 {
       font-size: 2rem;
       margin-bottom: 2rem;
     }

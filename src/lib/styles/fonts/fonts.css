@@ -164,7 +164,7 @@
 }
 
 @font-face {
-  font-family: 'Miller Display';
+  font-family: 'Miller Display SC';
   src: url('./MillerDisplay-RomanSC.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -180,7 +180,7 @@
 }
 
 @font-face {
-  font-family: 'Miller Display';
+  font-family: 'Miller Display SC';
   src: url('./MillerDisplay-ItalicSC.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
@@ -221,7 +221,7 @@
 }
 
 @font-face {
-  font-family: 'Miller Text';
+  font-family: 'Miller Text SC';
   src: url('./MillerText-RomanSC.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -237,7 +237,7 @@
 }
 
 @font-face {
-  font-family: 'Miller Text';
+  font-family: 'Miller Text SC';
   src: url('./MillerText-ItalicSC.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
