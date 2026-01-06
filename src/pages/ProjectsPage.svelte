@@ -319,15 +319,17 @@ p {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
   }
 
   .project-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #0a0a0a;
   }
 
   .project-card.expanded {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #0a0a0a;
   }
 
   .project-card h3 {
