@@ -31,6 +31,13 @@
   }
 
   onMount(() => {
+    // Handle redirect from 404.html
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      window.history.replaceState(null, '', redirect);
+    }
+    
     currentPage = getPageFromPath();
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
