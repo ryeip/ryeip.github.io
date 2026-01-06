@@ -49,7 +49,7 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #918f8f;
     color: #ffffff;
   }
 

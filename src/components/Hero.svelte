@@ -1,13 +1,29 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte';
+  import { fade } from 'svelte/transition';
   import nameLogo from '../lib/svg/namelogo_outline.svg';
   import foursquareIcon from '../lib/svg/foursquare.svg?raw';
 
   const dispatch = createEventDispatcher();
-  const placeholderSrc = '/images/default/placeholder.png';
+  const baseImages = [
+    '/images/thumbs/homepage/covidmigrate_header.png',
+    '/images/thumbs/homepage/covidmigrate_scrolly.png',
+    '/images/thumbs/homepage/csection_beeswarm.png',
+    '/images/thumbs/homepage/csection_search.png',
+    '/images/thumbs/homepage/datacenters_search.png',
+    '/images/thumbs/homepage/ideologyquiz_ternary.png',
+    '/images/thumbs/homepage/politicspull_bubbles.png',
+    '/images/thumbs/homepage/politicspull_map2.png',
+    '/images/thumbs/homepage/thedial_dial.png',
+    '/images/thumbs/homepage/trumpbiden270_scrolly.png',
+    '/images/thumbs/homepage/trumptweets_header.png',
+    '/images/thumbs/homepage/usautos_colors.png',
+    '/images/thumbs/homepage/usautos_scrolly.png',
+    '/images/thumbs/homepage/youngcancer_intro.png'
+  ];
   const navLinks = [
-    { label: 'about', page: 'about' },
-    { label: 'projects', page: 'projects' }
+    { label: 'projects', page: 'projects' },
+    { label: 'about', page: 'about' }
   ];
 
   function navigate(page) {
@@ -26,8 +42,56 @@
 
   let nameEl;
   let rollerWidth = null;
+  let slides = [];
+  let currentIndex = 0;
+  let autoplayId;
+  const slideDuration = 5000;
+
+  function shuffle(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function goTo(index) {
+    if (!slides.length) return;
+    currentIndex = (index + slides.length) % slides.length;
+  }
+
+  function nextSlide(manual = false) {
+    goTo(currentIndex + 1);
+    if (manual) restartAutoplay();
+  }
+
+  function prevSlide(manual = false) {
+    goTo(currentIndex - 1);
+    if (manual) restartAutoplay();
+  }
+
+  function startAutoplay() {
+    clearAutoplay();
+    if (slides.length < 2) return;
+    autoplayId = setInterval(() => nextSlide(false), slideDuration);
+  }
+
+  function restartAutoplay() {
+    startAutoplay();
+  }
+
+  function clearAutoplay() {
+    if (autoplayId) {
+      clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  }
 
   onMount(() => {
+    slides = shuffle(baseImages);
+    startAutoplay();
+
     if (!nameEl) return;
     const ro = new ResizeObserver((entries) => {
       const entry = entries[0];
@@ -36,7 +100,10 @@
       }
     });
     ro.observe(nameEl);
-    return () => ro.disconnect();
+    return () => {
+      ro.disconnect();
+      clearAutoplay();
+    };
   });
 </script>
 
@@ -66,7 +133,24 @@
   </div>
 
   <div class="herovis">
-    <img src={placeholderSrc} alt="" loading="lazy" />
+    {#if slides.length}
+      <a
+        class="swiper"
+        href="/projects"
+        on:click|preventDefault={() => navigate('projects')}
+        aria-label="View projects"
+      >
+        {#key slides[currentIndex]}
+          <img
+            src={slides[currentIndex]}
+            alt=""
+            loading="lazy"
+            in:fade={{ duration: 250 }}
+            out:fade={{ duration: 250 }}
+          />
+        {/key}
+      </a>
+    {/if}
   </div>
 
   <nav class="hero-nav">
@@ -237,14 +321,33 @@
   .herovis {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
   }
 
-  .herovis img {
+  .swiper {
+    position: relative;
     width: min(480px, 100%);
-    height: auto;
+    overflow: hidden;
+    border: solid 1px #bdbfc1;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    text-decoration: none;
+    cursor: pointer;
     display: block;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
+    aspect-ratio: 1 / 1;
   }
+
+  .swiper img,
+  .swiper video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Removed nav buttons; swiper is a single clickable link */
 
   @media (max-width: 900px) {
     .hero {
@@ -255,6 +358,7 @@
 
     .herovis {
       order: -1;
+      margin-bottom: 60px;
     }
 
     .herovis img {
@@ -266,6 +370,7 @@
     .rollwords,
     .roller {
       height: 22px;
+      margin-bottom: 2px;
     }
 
     .rlword {
