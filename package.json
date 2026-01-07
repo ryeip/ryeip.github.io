@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-og-image.js && vite build",
+    "build": "vite build",
     "preview": "vite preview",
+    "generate-og": "node scripts/generate-og-image.js",
     "deploy": "npm run build && git add -A && git commit -m 'Deploy' && git push"
   },
   "devDependencies": {
