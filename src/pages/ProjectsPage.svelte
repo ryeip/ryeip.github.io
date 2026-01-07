@@ -77,7 +77,7 @@
     {
     id: 5,
     title: 'The swing-states dial',
-    description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could potentially alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic.',
+    description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could potentially alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic. Using the latest estimates of voter turnout and preferences, the dial correctly predicted the winner in all seven swing states.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TheDial.png',
     images: [
@@ -91,7 +91,8 @@
     {
     id: 6,
     title: 'What type of voter are you?',
-    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'Working with NORC at the University of Chicago, WSJ commissioned a nationwide poll. From the results, NORC created left-right indexes for views on economic issues, social issues and faith in civic institutions. The combination of scores revealed five distinct political groups. We developed an interactive quiz that helped users identify their own political ideology based on a sample set of questions. I contributed extensive data analysis to translate NORC’s raw data into more accessible findings for our team. I oversaw the design and development of the interactive quiz and the visualizations, which included a ternary plot that positioned users within the ideological space based on their answers.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/IdeologyQuiz.png',
     images: [
     '/images/thumbs/swipers/ideologyquiz_questions.png',
@@ -104,7 +105,8 @@
     {
     id: 7,
     title: 'How Covid migrated across America',
-    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'After nearly two years of tracking data on the Covid-19 pandemic, I wanted to visualize the seasonal geographic patterns we observed. I did this by calculating a "center of gravity" for cases: creating a weighted average of latitude and longitude for confirmed cases each month. The result illustrated how cases spiked in southern states in the warmer months and northern states in the colder months—in both cases, seasons when people were more likely to gather indoors. I conducted the data analysis, wrote the story and created the graphics.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/CovidMigrate.png',
     images: [
     '/images/thumbs/swipers/covidmigrate_header.gif',
@@ -116,19 +118,21 @@
     {
     id: 8,
     title: 'Path to 270 electoral votes',
-    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'This project sought to illustrate how the outcome of the presidentia election in just a few states can broaden or narrow a candidate’s path to victory. For instance, once the Associated Press called Arizona, Wisconsin and Michigan for Joe Biden, our interactive showed Donald Trump couldn’t win without sweeping Pennsylvania, Georgia, North Carolina and Nevada. I designed the graphic, oversaw the development of the interactive and wrote the copy. We launched the graphic two weeks before the election and featured a live-udpdating version on election night that reflected the latest state results as they were called. It was one of the most popular features on election night, with nearly 2 million page views.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TrumpBiden270.png',
     images: [
     '/images/thumbs/swipers/trumpbiden270_scrolly.gif',
     '/images/thumbs/swipers/trumpbiden270_live.png'
     ],
-    tags: ['data analysis', 'data viz', 'interactive', 'writing', 'editing'],
+    tags: ['data viz', 'interactive', 'writing', 'editing'],
     link: 'https://www.wsj.com/graphics/how-trump-and-biden-can-each-get-to-270/?reflink=desktopwebshare_twitter'
     },
     {
     id: 9,
     title: 'Political polarization',
-    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'This project sought to step back from the immediate results of the 2020 election and explore the broader trends of political polarization in America over several decades. Over the course of months leading up to the election, I compiled data and conducted extensive analysis to identify the most striking patterns illustrating the divisions in the country. I oversaw the design and development of multiple interactive graphics and wrote the copy.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/PoliticsPull.png',
     images: [
     '/images/thumbs/swipers/politicspull_map1.gif',
@@ -142,7 +146,8 @@
     id: 10,
     title: 'President Trump’s tweets',
 
-    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'To mark President Donald Trump’s first year in office, I examined his Twitter activity. Trump’s use of social media was a hallmark of his presidency, and the informal nature of his tweets was a departure from precedent. I  analyzed more than 2,300 tweets to identify patterns in timing and content. I conducted the data analysis, wrote the story and created multiple graphics components.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TrumpTweets.png',
     images: [
     '/images/thumbs/swipers/trumptweets_header.png',
@@ -186,9 +191,7 @@
     <div class="container">
       <h1>Selected work</h1>
           <p>
-      I'm a designer and developer passionate about creating compelling visual narratives through
-      data. With expertise in data visualization, interactive storytelling, and design, I help
-      transform complex information into engaging and accessible experiences.
+      This is a small sample of projects I have worked on over the years. Some were solo efforts; others involved collaboration with reporters and developers. My roles have included data analysis, data visualization, interactive development, design, writing and editing.
     </p>
       <div class="projects-grid">
         {#each projects as project (project.id)}

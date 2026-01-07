@@ -14,7 +14,7 @@
 <main>
   <section class="about">
     <div class="container">
-      <h1>About me</h1>
+      <h1>Background and experience</h1>
       <div class="about-content">
         <div class="headshot-container">
           <img src="/images/yeipheadshot.png" alt="Headshot" class="headshot" />

@@ -27,7 +27,7 @@
       </button>
       <ul class="nav-menu" class:active={navOpen}>
         <li><button on:click={() => navigate('about')} class="nav-link" class:active-link={currentPage === 'about'}>About</button></li>
-        <li><button on:click={() => navigate('projects')} class="nav-link" class:active-link={currentPage === 'projects'}>Projects</button></li>
+        <li><button on:click={() => navigate('projects')} class="nav-link" class:active-link={currentPage === 'projects'}>Work</button></li>
       </ul>
     </div>
   </nav>
