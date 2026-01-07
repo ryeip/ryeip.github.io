@@ -25,7 +25,7 @@
             I believe in the power of marrying words, data and visuals to enlighten, surprise, delight and inspire.
             </p>
             <p>
-            My journalism journey began at 15, when I joined my high school newspaper. It has continued uninterrupted ever since, as a reporter, designer, data/visual journalist and editor.
+            My journalism journey began at the age of 15, when I joined my high school newspaper. It has continued uninterrupted ever since, as a reporter, designer, data/visual journalist and editor.
             </p>
             <p>
             For the past two decades, I have focused on visual journalism, drawing on my full range of skills: data analysis, data visualization, reporting and writing. I have experience managing small and large teams with diverse skill sets, leading collaborations among designers, developers, reporters and data journalists. I currently work as data visualization director for Business Insider, overseeing news graphics and interactive storytelling.
