@@ -20,8 +20,8 @@
     {
       id: 1,
       title: 'Hospital C-section rates',
-      description: 'An interactive data visualization project showcasing trends and patterns.',
-      fullDescription: 'This is a comprehensive interactive data visualization project that explores complex trends and patterns through engaging visual narratives.',
+      description: 'Neighboring hospitals can have wildly different C-section rates. Working with a reporter who built a database of over 1,700 hospitals from 29 states and Washington, D.C., I sought to convey her key findings. Components included: a combo violin/beeswarm plot illustrating the wide range of C-section rates nationwide and within states; a scrolly map that highlighted specific examples and led readers through the scale of our data analysis; and a searchable map. Selecting a hospital in the searchable map filtered the table to display that hospital’s rates along with the rates for the nearest hospital and other nearby hospitals.',
+      publication: 'For Business Insider',
       preview: '/images/thumbs/CSections.png',
       images: [
         '/images/thumbs/swipers/csection_scrollymap.gif',
@@ -34,8 +34,8 @@
     {
       id: 2,
       title: 'The cost of young cancer',
-      description: 'A comprehensive case study on visual design principles.',
-      fullDescription: 'An in-depth case study examining how visual design principles can enhance user experience and engagement across digital platforms.',
+      description: 'For the launch of a series on the impact of cancer on young adults, I oversaw the design and development of an animated introduction that set the stage for the series by featuring the 40 patients our reporters spoke to. Separately, we developed flexible content modules that could be embedded throughout the series to highlight key statistics and elevate subjects’ voices.',
+      publication: 'For Business Insider',
       preview: '/images/thumbs/YoungCancer.png',
       images: [
         '/images/thumbs/swipers/youngcancer_intro.gif',
@@ -47,8 +47,8 @@
     {
       id: 3,
       title: 'U.S. data center locations',
-      description: 'An interactive storytelling experience combining data and narrative.',
-      fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+      description: 'A multi-part investigation, this project represented the most comprehensive analysis of data center locations in the U.S. I oversaw the design and development of several graphic and design components, including: a consistent animated header treatment; multiple maps showing data center locations, energy usage and water scarcity; and a searchable tool that allowed users to explore data centers near them.',
+      publication: 'For Business Insider',
       preview: '/images/thumbs/DataCenters.png',
       images: [
         '/images/thumbs/swipers/datacenters_intro.gif',
@@ -62,8 +62,8 @@
      {
       id: 4,
       title: 'United States of automobiles',
-      description: 'An interactive storytelling experience combining data and narrative.',
-      fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+      description: 'This innovative use of used-car listings data explores the most uniquely popular car models across different regions of the United States. I worked with the data analyst to scrub and clean the data, and oversaw the design and development of multiple graphics components. The series features multiple maps, allowing readers to: 1) search locations to find the most uniquely popular car models in their area; and 2) look up a car model to see where in the U.S. it is most popular. We also built a dynamic visualization that illustrates how car colors have evolved over time.',
+      publication: 'For Business Insider',
       preview: '/images/thumbs/USAutos.png',
       images: [
         '/images/thumbs/swipers/usautos_carsearch.png',
@@ -77,8 +77,8 @@
     {
     id: 5,
     title: 'The swing-states dial',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could potentially alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic.',
+    publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TheDial.png',
     images: [
     '/images/thumbs/swipers/thedial_votesplit.png',
@@ -91,8 +91,7 @@
     {
     id: 6,
     title: 'What type of voter are you?',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
     preview: '/images/thumbs/IdeologyQuiz.png',
     images: [
     '/images/thumbs/swipers/ideologyquiz_questions.png',
@@ -105,8 +104,7 @@
     {
     id: 7,
     title: 'How Covid migrated across America',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
     preview: '/images/thumbs/CovidMigrate.png',
     images: [
     '/images/thumbs/swipers/covidmigrate_header.gif',
@@ -118,8 +116,7 @@
     {
     id: 8,
     title: 'Path to 270 electoral votes',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
     preview: '/images/thumbs/TrumpBiden270.png',
     images: [
     '/images/thumbs/swipers/trumpbiden270_scrolly.gif',
@@ -131,8 +128,7 @@
     {
     id: 9,
     title: 'Political polarization',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
     preview: '/images/thumbs/PoliticsPull.png',
     images: [
     '/images/thumbs/swipers/politicspull_map1.gif',
@@ -145,8 +141,8 @@
     {
     id: 10,
     title: 'President Trump’s tweets',
-    description: 'An interactive storytelling experience combining data and narrative.',
-    fullDescription: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
+
+    description: 'An innovative interactive storytelling experience that seamlessly blends data-driven insights with compelling narrative elements.',
     preview: '/images/thumbs/TrumpTweets.png',
     images: [
     '/images/thumbs/swipers/trumptweets_header.png',
@@ -188,7 +184,7 @@
 <main>
   <section class="projects">
     <div class="container">
-      <h1>Selected projects</h1>
+      <h1>Selected work</h1>
           <p>
       I'm a designer and developer passionate about creating compelling visual narratives through
       data. With expertise in data visualization, interactive storytelling, and design, I help
@@ -247,7 +243,8 @@
             </div>
             {#if expandedId === project.id}
               <div class="project-info">
-                <p class="full-description">{project.fullDescription}</p>
+                <p class="publication">{project.publication}</p>
+                <p class="description">{project.description}</p>
                 <div class="tags">
                   {#each project.tags as tag}
                     <span class="tag">{tag}</span>
@@ -462,12 +459,22 @@ p {
     background-color: #ffffff;
   }
 
-  .full-description {
+  .description {
     color: #0a0a0a;
     line-height: 1.2;
     margin-bottom: 1.5rem;
     font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.05rem;
+  }
+
+   .publication {
+    color: #0a0a0a;
+    line-height: 1;
+    font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
+    font-style: italic;
+    font-size: 0.875rem;
+    text-align: right;
+    margin: 0 0 -.5em;
   }
 
   .tags {

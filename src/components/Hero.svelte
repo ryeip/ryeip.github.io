@@ -22,7 +22,7 @@
     '/images/thumbs/homepage/youngcancer_intro.png'
   ];
   const navLinks = [
-    { label: 'projects', page: 'projects' },
+    { label: 'work', page: 'projects' },
     { label: 'about', page: 'about' }
   ];
 
@@ -316,6 +316,7 @@
     font-family: 'Miller Display', Georgia, serif;
     font-weight: 400;
     font-size: 2rem;
+    letter-spacing: -.03em;
   }
 
   .herovis {
@@ -328,9 +329,9 @@
     position: relative;
     width: min(480px, 100%);
     overflow: hidden;
-    border: solid 1px #bdbfc1;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    /* border: solid 1px #918f8f; */
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     cursor: pointer;
     display: block;
@@ -352,8 +353,8 @@
   @media (max-width: 900px) {
     .hero {
       grid-template-columns: 1fr;
-      padding: 36px clamp(20px, 6vw, 48px);
-      display: inline-block;
+      padding: 18px clamp(18px, 3vw, 28px);
+      display: block;
     }
 
     .herovis {

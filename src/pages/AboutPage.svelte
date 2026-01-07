@@ -21,20 +21,30 @@
           <a href="/YeipResume.pdf" target="_blank" download class="resume-link">Résumé</a>
         </div>
         <div class="about-text">
-          <p>
-            I'm a designer and developer passionate about creating compelling visual narratives through
-            data. With expertise in data visualization, interactive storytelling, and design, I help
-            transform complex information into engaging and accessible experiences.
-          </p>
-          <p>
-            Whether it's through writing, editing, or developing interactive tools, I believe in the
-            power of clear communication and thoughtful design.
-          </p>
-          <p>
-            My background spans multiple disciplines—from graphic design to front-end development—which
-            allows me to bridge the gap between aesthetics and functionality. I'm driven by the belief
-            that good design is invisible; it guides users intuitively toward understanding.
-          </p>
+            <p>
+            I believe in the power of marrying words, data and visuals to enlighten, surprise, delight and inspire.
+            </p>
+            <p>
+            My journalism journey began at 15, when I joined my high school newspaper. It has continued uninterrupted ever since, as a reporter, designer, data/visual journalist and editor.
+            </p>
+            <p>
+            For the past two decades, I have focused on visual journalism, drawing on my full range of skills: data analysis, data visualization, reporting and writing. I have experience managing small and large teams with diverse skill sets, leading collaborations among designers, developers, reporters and data journalists. I currently work as data visualization director for Business Insider, overseeing news graphics and interactive storytelling.
+            </p>
+            <p>
+            My career has spanned coverage areas, from the automotive industry to vaccinations. Much of my work has been particularly focused on the intersection of data and politics.
+            </p>
+            <p>
+            Prior to joining Business Insider, I spent nearly 20 years at The Wall Street Journal, including seven years as deputy graphics director. Before joining the Journal, I worked as a designer and graphic artist (and occasional columnist) at The Patriot-News in Harrisburg, Pa. My work has been recognized by the Society for News Design, the Online Journalism Awards, Information Is Beautiful Awards and Best American Infographics, among others.
+            </p>
+            <p>
+            I also enjoy teaching young and aspiring journalists. I have taught at The New School in New York City and as a regular guest lecturer for the School of Journalism at the University of Missouri, as well as high school journalism workshops and conferences. I frequently serve as a judge for scholastic and collegiate journalism contests.
+            </p>
+            <p>
+            In 2018, I was honored by the Columbia Scholastic Press Association with the Joseph M. Murphy Award, “The ultimate distinction offered by the Association for service by a person or organization.” In 2024, I was also named a recipient of CSPA’s Alumni Achievement Award, honoring “individuals who have profoundly contributed to and have had a sustained impact on scholastic journalism education.”
+            </p>
+            <p>
+            I earned bachelor’s and master’s degrees in journalism from Michigan State University.
+            </p>
         </div>
       </div>
     </div>
