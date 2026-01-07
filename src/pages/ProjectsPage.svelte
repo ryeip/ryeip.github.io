@@ -34,7 +34,7 @@
     {
       id: 2,
       title: 'The cost of young cancer',
-      description: 'For the launch of a series on the impact of cancer on young adults, I oversaw the design and development of an animated introduction that set the stage for the series by featuring the 40 patients our reporters spoke to. Separately, we developed flexible content modules that could be embedded throughout the series to highlight key statistics and elevate subjects’ voices.',
+      description: 'For the launch of a series on the impact of cancer on young adults, I oversaw the design and development of an animated introduction that set the stage for the series by featuring the 40 patients our reporters spoke to. Separately, we developed flexible content modules that could be embedded throughout the series to highlight key statistics and amplify the voices of subjects.',
       publication: 'For Business Insider',
       preview: '/images/thumbs/YoungCancer.png',
       images: [
@@ -62,7 +62,7 @@
      {
       id: 4,
       title: 'United States of automobiles',
-      description: 'This innovative use of used-car listings data explores the most uniquely popular car models across different regions of the United States. I worked with the data analyst to scrub and clean the data, and oversaw the design and development of multiple graphics components. The series features multiple maps, allowing readers to: 1) search locations to find the most uniquely popular car models in their area; and 2) look up a car model to see where in the U.S. it is most popular. We also built a dynamic visualization that illustrates how car colors have evolved over time.',
+      description: 'This innovative use of used-car listings data explores the most uniquely popular car models across different regions of the United States. I worked with the data analyst to scrub and clean the data, and oversaw the design and development of multiple graphics components. The series features multiple maps, allowing readers to: 1) search locations to find the most uniquely popular car models in their area; and 2) look up a car model to see where in the U.S. it is most popular. We also developed a dynamic visualization that illustrates the evolution of car colors over time.',
       publication: 'For Business Insider',
       preview: '/images/thumbs/USAutos.png',
       images: [
@@ -77,7 +77,7 @@
     {
     id: 5,
     title: 'The swing-states dial',
-    description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could potentially alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic. Using the latest estimates of voter turnout and preferences, the dial correctly predicted the winner in all seven swing states.',
+    description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic. Using the latest estimates of voter turnout and preferences, the dial correctly predicted the winner in all seven swing states.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TheDial.png',
     images: [
@@ -105,7 +105,7 @@
     {
     id: 7,
     title: 'How Covid migrated across America',
-    description: 'After nearly two years of tracking data on the Covid-19 pandemic, I wanted to visualize the seasonal geographic patterns we observed. I did this by calculating a "center of gravity" for cases: creating a weighted average of latitude and longitude for confirmed cases each month. The result illustrated how cases spiked in southern states in the warmer months and northern states in the colder months—in both cases, seasons when people were more likely to gather indoors. I conducted the data analysis, wrote the story and created the graphics.',
+    description: 'After nearly two years of tracking data on the Covid-19 pandemic, I wanted to visualize the seasonal geographic patterns we observed. I did this by calculating a "center of gravity" for cases: creating a weighted average of latitude and longitude for confirmed cases each month. The result illustrated how cases spiked in southern states during the warmer months and in northern states during the colder months—in both cases, seasons when people were more likely to gather indoors. I conducted the data analysis, wrote the story and created the graphics.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/CovidMigrate.png',
     images: [
@@ -118,7 +118,7 @@
     {
     id: 8,
     title: 'Path to 270 electoral votes',
-    description: 'This project sought to illustrate how the outcome of the presidentia election in just a few states can broaden or narrow a candidate’s path to victory. For instance, once the Associated Press called Arizona, Wisconsin and Michigan for Joe Biden, our interactive showed Donald Trump couldn’t win without sweeping Pennsylvania, Georgia, North Carolina and Nevada. I designed the graphic, oversaw the development of the interactive and wrote the copy. We launched the graphic two weeks before the election and featured a live-udpdating version on election night that reflected the latest state results as they were called. It was one of the most popular features on election night, with nearly 2 million page views.',
+    description: 'This project sought to illustrate how the outcome of the presidential election in just a few states can broaden or narrow a candidate’s path to victory. For instance, once the Associated Press called Arizona, Wisconsin and Michigan for Joe Biden, our interactive showed Donald Trump couldn’t win without sweeping Pennsylvania, Georgia, North Carolina and Nevada. I designed the graphic, oversaw the development of the interactive and wrote the copy. We launched the graphic two weeks before the election and featured a live-updating version on election night that reflected the latest state results as they were called. It was one of the most popular features on election night, with nearly 2 million page views.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TrumpBiden270.png',
     images: [
@@ -131,7 +131,7 @@
     {
     id: 9,
     title: 'Political polarization',
-    description: 'This project sought to step back from the immediate results of the 2020 election and explore the broader trends of political polarization in America over several decades. Over the course of months leading up to the election, I compiled data and conducted extensive analysis to identify the most striking patterns illustrating the divisions in the country. I oversaw the design and development of multiple interactive graphics and wrote the copy.',
+    description: 'This project sought to step back from the immediate results of the 2020 election and explore the broader trends of political polarization in America over several decades. Over the course of several months leading up to the election, I compiled data and conducted extensive analysis to identify the most striking patterns that illustrate the divisions in the country. I oversaw the design and development of multiple interactive graphics and wrote the copy.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/PoliticsPull.png',
     images: [
