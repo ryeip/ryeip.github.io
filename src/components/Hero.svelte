@@ -338,8 +338,7 @@
     aspect-ratio: 1 / 1;
   }
 
-  .swiper img,
-  .swiper video {
+  .swiper img {
     position: absolute;
     inset: 0;
     width: 100%;

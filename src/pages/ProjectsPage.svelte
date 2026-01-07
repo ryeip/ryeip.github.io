@@ -194,7 +194,19 @@
         {#each projects as project (project.id)}
           <div class="project-card" class:expanded={expandedId === project.id}>
             <h3>{project.title}</h3>
-            <div class="project-media" on:click={() => toggleExpand(project.id)}>
+            <div
+              class="project-media"
+              role="button"
+              tabindex="0"
+              aria-label="Toggle project details"
+              on:click={() => toggleExpand(project.id)}
+              on:keydown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExpand(project.id);
+                }
+              }}
+            >
               {#if expandedId === project.id}
                 <div class="project-swiper" aria-live="polite">
                   <button
@@ -414,12 +426,6 @@ p {
     .project-preview:hover {
         filter: grayscale(0%);
     }
-
-  .project-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   .expand-btn {
     position: absolute;

@@ -99,16 +99,6 @@
     gap: 2rem;
   }
 
-  .nav-menu a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    transition: color 0.3s ease;
-  }
-
-  .nav-menu a:hover {
-    color: #9b1312;
-  }
-
   .nav-link {
     background: none;
     border: none;
