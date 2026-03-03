@@ -21,6 +21,7 @@
       id: 1,
       title: 'Hospital C-section rates',
       description: 'Neighboring hospitals can have wildly different C-section rates. Working with a reporter who built a database of over 1,700 hospitals from 29 states and Washington, D.C., I sought to convey her key findings. Components included: a combo violin/beeswarm plot illustrating the wide range of C-section rates nationwide and within states; a scrolly map that highlighted specific examples and led readers through the scale of our data analysis; and a searchable map. Selecting a hospital in the searchable map filtered the table to display that hospital’s rates along with the rates for the nearest hospital and other nearby hospitals.',
+      awards: 'Finalist, 2025 ASME National Magazine Awards (Service Journalism)',
       publication: 'For Business Insider',
       preview: '/images/thumbs/CSections.png',
       images: [
@@ -48,6 +49,7 @@
       id: 3,
       title: 'U.S. data center locations',
       description: 'A multi-part investigation, this project represented the most comprehensive analysis of data center locations in the U.S. I oversaw the design and development of several graphic and design components, including: a consistent animated header treatment; multiple maps showing data center locations, energy usage and water scarcity; and a searchable tool that allowed users to explore data centers near them.',
+      awards: 'Winner, 2025 George Polk Award (Environmental Reporting)',
       publication: 'For Business Insider',
       preview: '/images/thumbs/DataCenters.png',
       images: [
@@ -260,6 +262,9 @@
               <div class="project-info">
                 <p class="publication">{project.publication}</p>
                 <p class="description">{project.description}</p>
+                {#if project.awards}
+                  <span class="awards">{project.awards}</span>
+                {/if}
                 <div class="tags">
                   {#each project.tags as tag}
                     <span class="tag">{tag}</span>
@@ -471,9 +476,22 @@ p {
   .description {
     color: #0a0a0a;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.05rem;
+  }
+
+  .awards {
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #0a0a0a;
+    background-color: #E5DEA4;
+    border-radius: 4px;
+    padding: 0.5rem 0.5rem;
   }
 
    .publication {

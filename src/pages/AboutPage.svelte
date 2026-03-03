@@ -34,7 +34,9 @@
             My career has spanned coverage areas, from the automotive industry to vaccinations. Much of my work has been particularly focused on the intersection of data and politics.
             </p>
             <p>
-            Prior to joining Business Insider, I spent nearly 20 years at The Wall Street Journal, including seven years as deputy graphics director. Before joining the Journal, I worked as a designer and graphic artist (and occasional columnist) at The Patriot-News in Harrisburg, Pa. My work has been recognized by the Society for News Design, the Online Journalism Awards, Information Is Beautiful Awards and Best American Infographics, among others.
+            Prior to joining Business Insider, I spent nearly 20 years at The Wall Street Journal, including seven years as deputy graphics director. Before joining the Journal, I worked as a designer and graphic artist (and occasional columnist) at The Patriot-News in Harrisburg, Pa. 
+            </p>
+            <p>My work has been recognized by the Society for News Design, the Online Journalism Awards, Information Is Beautiful Awards and Best American Infographics, among others. I was part of a team that won the 2025 George Polk Award for environmental reporting and another that was named a finalist for the 2025 ASME National Magazine Award for service journalism. 
             </p>
             <p>
             I also enjoy teaching young and aspiring journalists. I have taught at The New School in New York City and as a regular guest lecturer for the School of Journalism at the University of Missouri, as well as high school journalism workshops and conferences. I frequently serve as a judge for scholastic and collegiate journalism contests.
