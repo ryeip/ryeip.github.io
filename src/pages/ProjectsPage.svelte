@@ -36,6 +36,7 @@
       id: 2,
       title: 'The cost of young cancer',
       description: 'For the launch of a series on the impact of cancer on young adults, I oversaw the design and development of an animated introduction that set the stage for the series by featuring the 40 patients our reporters spoke to. Separately, we developed flexible content modules that could be embedded throughout the series to highlight key statistics and amplify the voices of subjects.',
+      awards: 'First place, National Headliner Awards',
       publication: 'For Business Insider',
       preview: '/images/thumbs/YoungCancer.png',
       images: [
@@ -49,7 +50,9 @@
       id: 3,
       title: 'U.S. data center locations',
       description: 'A multi-part investigation, this project represented the most comprehensive analysis of data center locations in the U.S. I oversaw the design and development of several graphic and design components, including: a consistent animated header treatment; multiple maps showing data center locations, energy usage and water scarcity; and a searchable tool that allowed users to explore data centers near them.',
-      awards: 'Winner, 2025 George Polk Award (Environmental Reporting)',
+      awards: ['Winner, 2025 George Polk Award (Environmental Reporting)',
+               'Finalist, Innovation in Journalism, Poynter Institute',
+              'Honorable mention, SABEW Best in Business Awards (Data Journalism)'],
       publication: 'For Business Insider',
       preview: '/images/thumbs/DataCenters.png',
       images: [
@@ -263,7 +266,11 @@
                 <p class="publication">{project.publication}</p>
                 <p class="description">{project.description}</p>
                 {#if project.awards}
-                  <span class="awards">{project.awards}</span>
+                  <div class="awards-list">
+                    {#each (Array.isArray(project.awards) ? project.awards : [project.awards]) as award}
+                      <span class="awards">{award}</span>
+                    {/each}
+                  </div>
                 {/if}
                 <div class="tags">
                   {#each project.tags as tag}
@@ -481,10 +488,16 @@ p {
     font-size: 1.05rem;
   }
 
+  .awards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .awards {
     display: inline-block;
     line-height: 1;
-    margin-bottom: 1.5rem;
     font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: .85rem;
     font-weight: 600;
