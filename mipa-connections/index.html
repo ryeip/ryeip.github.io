@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Connections</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page" aria-labelledby="game-title">
+      <header class="page-header">
+        <p class="eyebrow">MIPA Summer Workshop</p>
+        <h1 id="game-title">Design Connections</h1>
+        <p class="instructions">Select four terms that share a connection</p>
+        <p class="note">There is no limit on incorrect guesses</p>
+      </header>
+
+      <section class="game" aria-label="Word grouping game">
+        <div class="controls" role="group" aria-label="Game controls">
+          <button id="shuffle-btn" type="button" class="control-btn">Shuffle</button>
+          <button id="deselect-btn" type="button" class="control-btn">Deselect All</button>
+          <button id="submit-btn" type="button" class="submit-btn" disabled>Submit</button>
+        </div>
+
+        <p id="status-message" class="status-message" aria-hidden="true"></p>
+        <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+        <section aria-label="Solved groups">
+          <div id="solved-groups" class="solved-groups"></div>
+        </section>
+
+        <section aria-label="Active terms">
+          <div id="word-grid" class="word-grid"></div>
+        </section>
+
+        <section id="completion" class="completion" hidden>
+          <h2>You completed every connection!</h2>
+          <button id="play-again-btn" type="button" class="play-again-btn">Play Again</button>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
