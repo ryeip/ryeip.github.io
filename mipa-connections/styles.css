@@ -1,0 +1,336 @@
+/* Final font stack for the game UI. */
+
+@font-face {
+  font-family: "Bree Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/bree-serif@5.2.8/latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/barlow@5.2.8/latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/barlow@5.2.8/latin-700-normal.woff2") format("woff2");
+}
+
+:root {
+  --bg: #f8f8f8;
+  --surface: #faf9f6;
+  --spartan-lime: #7BBE00;
+  --spartan-green: #18453B;
+  --ink: #0a0a0a;
+  --ink-soft: #76767a;
+  --stroke: #bdbfc1;
+  --tile-bg: #f8f8f8;
+  --tile-hover: #ffffff;
+  --tile-pressed: #d3d3d5;
+  --tile-selected-bg: #7BBE00;
+  --tile-selected-ink: #ffffff;
+  --focus: #0f766e;
+  --status: #40434a;
+  --status-error: #ff8c1a;
+  --status-success: #008934;
+  --group-1: #dce7f5;
+  --group-2: #f8e3c8;
+  --group-3: #d7eadf;
+  --group-4: #eadcf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Barlow", "Arial", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.4;
+}
+
+.page {
+  width: min(920px, 100% - 2rem);
+  margin: 2.5rem auto 3rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--spartan-lime);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.35rem 0 0;
+  font-family: "Bree Serif", "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: 0.02em;
+}
+
+.instructions,
+.note {
+  margin: 0.45rem auto 0;
+  max-width: 50ch;
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 1.25rem;
+}
+
+.note {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.game {
+  background: #ffffff;
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  box-shadow: 0 16px 40px -32px #000000cc;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.controls button {
+  font-family: "Bree Serif", "Times New Roman", serif;
+  font-weight: 400;
+}
+
+button {
+  appearance: none;
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 0.62rem 1rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--ink);
+  background: #ffffff;
+  cursor: pointer;
+  transition: background-color 130ms ease, transform 80ms ease, border-color 130ms ease;
+}
+
+button:hover {
+  background: #f0eee8;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--focus) 72%, white);
+  outline-offset: 2px;
+}
+
+.submit-btn {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.submit-btn:hover {
+  background: #0a0a0a;
+}
+
+button:disabled,
+button:disabled:hover {
+  cursor: not-allowed;
+  color: #8a8c91;
+  border-color: #d0ced0;
+  background: #f0f0ef;
+  transform: none;
+}
+
+.status-message {
+  margin: 0.2rem 0 0.8rem;
+  min-height: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--status);
+}
+
+.status-message.error {
+  background: var(--status-error);
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.status-message.success {
+  background: var(--status-success);
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.solved-groups {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 0.85rem;
+}
+
+.solved-group {
+  border-radius: 12px;
+  border: 1px solid #00000022;
+  padding: 0.78rem 0.95rem;
+}
+
+.solved-group h2 {
+  margin: 0;
+  font-family: "Barlow", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform:uppercase;
+}
+
+.solved-group p {
+  margin: 0.35rem 0 0;
+  font-weight: 700;
+}
+
+.solved-group[data-color="1"] {
+  background: var(--group-1);
+}
+
+.solved-group[data-color="2"] {
+  background: var(--group-2);
+}
+
+.solved-group[data-color="3"] {
+  background: var(--group-3);
+}
+
+.solved-group[data-color="4"] {
+  background: var(--group-4);
+}
+
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.tile {
+  width: 100%;
+  border-radius: 11px;
+  border: 2px solid var(--stroke);
+  background: var(--tile-bg);
+  min-height: 68px;
+  font-family: "Barlow", "Arial Narrow", sans-serif;
+  letter-spacing: 0.012em;
+  font-size: 1rem;
+}
+
+.tile:hover {
+  background: var(--tile-hover);
+}
+
+.tile:active {
+  background: var(--tile-pressed);
+}
+
+.tile.selected {
+  background: var(--tile-selected-bg);
+  color: var(--tile-selected-ink);
+  border-color: #101621;
+  box-shadow: inset 0 0 0 2px #ffffff66;
+}
+
+.completion {
+  margin-top: 1rem;
+  border-top: 1px dashed var(--stroke);
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.completion h2 {
+  margin: 0;
+  padding-bottom: 1.5rem;
+  line-height: 1.1;
+  font-family: "Barlow", "Arial Narrow", sans-serif;
+}
+
+.completion p {
+  margin: 0.45rem 0 0.8rem;
+}
+
+.play-again-btn {
+  border-color: var(--spartan-lime);
+  color:var(--spartan-lime);
+}
+
+.play-again-btn:hover {
+  background: #e2f3f2;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .page {
+    width: min(920px, 100% - 1.2rem);
+    margin-top: 1.2rem;
+  }
+
+  .word-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tile {
+    min-height: 60px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
