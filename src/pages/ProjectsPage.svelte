@@ -19,136 +19,165 @@
   const projects = [
     {
       id: 1,
+      title: 'License-plate camera misreads',
+      description: 'Through a FOIA request, our reporter obtained records that revealed widespread misreads by Flock license-plate cameras in Roseville, Calif. This package included an animated illustration of how license plates are flagged and the error rate on those alerts, as well as a scrolly explainer on how misreads occur.',
+      publication: 'For Business Insider',
+      preview: '/images/thumbs/flockcameras.png',
+      images: [
+        '/images/thumbs/swipers/flocktraffic.mp4',
+        '/images/thumbs/swipers/flockplate.mp4'
+      ],
+      tags: ['data viz', 'interactive', 'editing'],
+      link: 'https://www.businessinsider.com/flock-camera-misread-license-plate-reader-california-roseville-police-2026-7?gift-id=KwBJuf0_9YF11x5x_ArYmQ'
+    }, 
+    {
+      id: 2,
+      title: 'U.S. data center locations (2026)',
+      description: 'This was an update to our earlier analysis and showed the rapid growth of data-center infrastructure over just one year. We opened with a scrolly video header to zoom into one of the largest such data centers in a place that was once farmland. Additional graphics break down our findings step by step. And our updated <a href="https://www.businessinsider.com/ai-data-center-near-me-location-tracker-2026-6?gift-id=JL9pmPmudeljz_BjIR3_FA">searchable map</a> allows users to enter a location—street address, city, county, ZIP Code, or state—to find nearby data centers.',
+      publication: 'For Business Insider',
+      preview: '/images/thumbs/datacenters26.png',
+      images: [
+        '/images/thumbs/swipers/datacenters26_intro.mp4',
+        '/images/thumbs/swipers/datacenters26_scrollymap.mp4',
+        '/images/thumbs/swipers/datacenters26_maptransition.mp4',
+        '/images/thumbs/swipers/datacenters26_poweruse.mp4',
+        '/images/thumbs/swipers/datacenters26_search.png'
+      ],
+      tags: ['design', 'interactive', 'editing', 'data viz'],
+      link: 'https://www.businessinsider.com/us-ai-data-center-power-electricity-use-consumption-2026-6?gift-id=eJurV4K9LstBobknon9UfA'
+    }, 
+    {
+      id: 3,
       title: 'Hospital C-section rates',
       description: 'Neighboring hospitals can have wildly different C-section rates. Working with a reporter who built a database of over 1,700 hospitals from 29 states and Washington, D.C., I sought to convey her key findings. Components included: a combo violin/beeswarm plot illustrating the wide range of C-section rates nationwide and within states; a scrolly map that highlighted specific examples and led readers through the scale of our data analysis; and a searchable map. Selecting a hospital in the searchable map filtered the table to display that hospital’s rates along with the rates for the nearest hospital and other nearby hospitals.',
       awards: 'Finalist, 2025 ASME National Magazine Awards (Service Journalism)',
       publication: 'For Business Insider',
       preview: '/images/thumbs/CSections.png',
       images: [
-        '/images/thumbs/swipers/csection_scrollymap.gif',
-        '/images/thumbs/swipers/csection_beeswarm.gif',
+        '/images/thumbs/swipers/csection_beeswarm.mp4',
+        '/images/thumbs/swipers/csection_scrollymap.mp4',
         '/images/thumbs/swipers/csection_search.png'
       ],
       tags: ['data viz', 'interactive', 'editing', 'design'],
-      link: 'https://www.businessinsider.com/c-section-hospital-rates-differences-data-analysis-2025-12'
+      link: 'https://www.businessinsider.com/c-section-hospital-rates-differences-data-analysis-2025-12?gift-id=u1vIEupt3sWlfemwkNDYqg'
     },
     {
-      id: 2,
+      id: 4,
       title: 'The cost of young cancer',
       description: 'For the launch of a series on the impact of cancer on young adults, I oversaw the design and development of an animated introduction that set the stage for the series by featuring the 40 patients our reporters spoke to. Separately, we developed flexible content modules that could be embedded throughout the series to highlight key statistics and amplify the voices of subjects.',
       awards: 'First place, National Headliner Awards',
       publication: 'For Business Insider',
       preview: '/images/thumbs/YoungCancer.png',
       images: [
-        '/images/thumbs/swipers/youngcancer_intro.gif',
+        '/images/thumbs/swipers/youngcancer_intro.mp4',
         '/images/thumbs/swipers/youngcancer_modules.png'
       ],
       tags: ['design', 'editing', 'interactive'],
-      link: 'https://www.businessinsider.com/true-cost-young-colon-cancer-crisis-2025-10'
+      link: 'https://www.businessinsider.com/true-cost-young-colon-cancer-crisis-2025-10?gift-id=dmodwc-Ij6psYZVlnDJj1A'
     },
     {
-      id: 3,
-      title: 'U.S. data center locations',
-      description: 'A multi-part investigation, this project represented the most comprehensive analysis of data center locations in the U.S. I oversaw the design and development of several graphic and design components, including: a consistent animated header treatment; multiple maps showing data center locations, energy usage and water scarcity; and a searchable tool that allowed users to explore data centers near them.',
+      id: 5,
+      title: 'U.S. data center locations (2025)',
+      description: 'A multi-part investigation, this project represented the most comprehensive analysis of data center locations in the U.S. I oversaw the design and development of several graphic and design components, including: a consistent animated header treatment; multiple maps showing data center locations, energy usage and water scarcity; and <a href="https://www.businessinsider.com/data-center-locations-us-map-ai-boom-2025-9?gift-id=UEUTEONFN1QQR3Q-ERoerA">a searchable tool</a> that allowed users to explore data centers near them.',
       awards: ['Winner, 2025 George Polk Award (Environmental Reporting)',
                'Finalist, Innovation in Journalism, Poynter Institute',
               'Honorable mention, SABEW Best in Business Awards (Data Journalism)'],
       publication: 'For Business Insider',
       preview: '/images/thumbs/DataCenters.png',
       images: [
-        '/images/thumbs/swipers/datacenters_intro.gif',
-        '/images/thumbs/swipers/datacenters_scrolly.gif',
-        '/images/thumbs/swipers/datacenters_table.gif',
+        '/images/thumbs/swipers/datacenters_intro.mp4',
+        '/images/thumbs/swipers/datacenters_scrolly.mp4',
+        '/images/thumbs/swipers/datacenters_table.mp4',
         '/images/thumbs/swipers/datacenters_search.png'
       ],
       tags: ['design', 'interactive', 'editing', 'data viz'],
-      link: 'https://www.businessinsider.com/ai-data-center-cost-2025-6'
+      link: 'https://www.businessinsider.com/ai-data-center-cost-2025-6?gift-id=eWRZx8iVIEXx1qeMqpViOw'
     },
      {
-      id: 4,
+      id: 6,
       title: 'United States of automobiles',
       description: 'This innovative use of used-car listings data explores the most uniquely popular car models across different regions of the United States. I worked with the data analyst to scrub and clean the data, and oversaw the design and development of multiple graphics components. The series features multiple maps, allowing readers to: 1) search locations to find the most uniquely popular car models in their area; and 2) look up a car model to see where in the U.S. it is most popular. We also developed a dynamic visualization that illustrates the evolution of car colors over time.',
       publication: 'For Business Insider',
       preview: '/images/thumbs/USAutos.png',
       images: [
         '/images/thumbs/swipers/usautos_carsearch.png',
-        '/images/thumbs/swipers/usautos_scrolly.gif',
+        '/images/thumbs/swipers/usautos_scrolly.mp4',
         '/images/thumbs/swipers/usautos_citysearch.png',
-        '/images/thumbs/swipers/usautos_colors.gif'
+        '/images/thumbs/swipers/usautos_colors.mp4'
       ],
       tags: ['design', 'interactive', 'editing', 'data viz', 'data analysis'],
-      link: 'https://www.businessinsider.com/united-states-car-models-interactive-guide-politics-color-brand-location-2024-10'
+      link: 'https://www.businessinsider.com/united-states-car-models-interactive-guide-politics-color-brand-location-2024-10?gift-id=T24GMeE_O2nhFjR3-0fa5w'
     },
     {
-    id: 5,
+    id: 7,
     title: 'The swing-states dial',
     description: 'This project sought to explain how shifts among various demographic groups might affect the outcome of the 2024 election. The dial let users see how turnout and vote choice among each group could alter the election result. I compiled the data, did the analysis, contributed to the writing and oversaw the design and development of the interactive graphic. Using the latest estimates of voter turnout and preferences, the dial correctly predicted the winner in all seven swing states.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TheDial.png',
     images: [
     '/images/thumbs/swipers/thedial_votesplit.png',
-    '/images/thumbs/swipers/thedial_dial.gif',
+    '/images/thumbs/swipers/thedial_dial.mp4',
     '/images/thumbs/swipers/thedial_turnout.png'
     ],
     tags: ['data analysis', 'data viz', 'interactive', 'writing', 'editing'],
     link: 'https://www.wsj.com/politics/elections/election-dial-battleground-states-trump-biden-224ad0e6?st=tpchsc&reflink=desktopwebshare_permalink'
     },
     {
-    id: 6,
+    id: 8,
     title: 'What type of voter are you?',
     description: 'Working with NORC at the University of Chicago, WSJ commissioned a nationwide poll. From the results, NORC created left-right indexes for views on economic issues, social issues and faith in civic institutions. The combination of scores revealed five distinct political groups. We developed an interactive quiz that helped users identify their own political ideology based on a sample set of questions. I contributed extensive data analysis to translate NORC’s raw data into more accessible findings for our team. I oversaw the design and development of the interactive quiz and the visualizations, which included a ternary plot that positioned users within the ideological space based on their answers.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/IdeologyQuiz.png',
     images: [
     '/images/thumbs/swipers/ideologyquiz_questions.png',
-    '/images/thumbs/swipers/ideologyquiz_transition.gif',
-    '/images/thumbs/swipers/ideologyquiz_ternary.gif'
+    '/images/thumbs/swipers/ideologyquiz_transition.mp4',
+    '/images/thumbs/swipers/ideologyquiz_ternary.mp4'
     ],
     tags: ['data analysis', 'data viz', 'writing', 'interactive', 'editing'],
     link: 'https://www.wsj.com/politics/elections/election-2024-quiz-poll-ideology-7533f46b?st=eWXQMR&reflink=desktopwebshare_permalink'
     },
     {
-    id: 7,
+    id: 9,
     title: 'How Covid migrated across America',
     description: 'After nearly two years of tracking data on the Covid-19 pandemic, I wanted to visualize the seasonal geographic patterns we observed. I did this by calculating a "center of gravity" for cases: creating a weighted average of latitude and longitude for confirmed cases each month. The result illustrated how cases spiked in southern states during the warmer months and in northern states during the colder months—in both cases, seasons when people were more likely to gather indoors. I conducted the data analysis, wrote the story and created the graphics.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/CovidMigrate.png',
     images: [
     '/images/thumbs/swipers/covidmigrate_header.gif',
-    '/images/thumbs/swipers/covidmigrate_scrolly.gif'
+    '/images/thumbs/swipers/covidmigrate_scrolly.mp4'
     ],
     tags: ['data analysis', 'writing', 'data viz', 'interactive'],
     link: 'https://www.wsj.com/health/healthcare/how-covid-19-has-migrated-across-america-11640148514?st=R1K3zT&reflink=desktopwebshare_permalink' 
     },
     {
-    id: 8,
+    id: 10,
     title: 'Path to 270 electoral votes',
     description: 'This project sought to illustrate how the outcome of the presidential election in just a few states can broaden or narrow a candidate’s path to victory. For instance, once the Associated Press called Arizona, Wisconsin and Michigan for Joe Biden, our interactive showed Donald Trump couldn’t win without sweeping Pennsylvania, Georgia, North Carolina and Nevada. I designed the graphic, oversaw the development of the interactive and wrote the copy. We launched the graphic two weeks before the election and featured a live-updating version on election night that reflected the latest state results as they were called. It was one of the most popular features on election night, with nearly 2 million page views.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/TrumpBiden270.png',
     images: [
-    '/images/thumbs/swipers/trumpbiden270_scrolly.gif',
+    '/images/thumbs/swipers/trumpbiden270_scrolly.mp4',
     '/images/thumbs/swipers/trumpbiden270_live.png'
     ],
     tags: ['data viz', 'interactive', 'writing', 'editing'],
     link: 'https://www.wsj.com/graphics/how-trump-and-biden-can-each-get-to-270/?reflink=desktopwebshare_twitter'
     },
     {
-    id: 9,
+    id: 11,
     title: 'Political polarization',
     description: 'This project sought to step back from the immediate results of the 2020 election and explore the broader trends of political polarization in America over several decades. Over the course of several months leading up to the election, I compiled data and conducted extensive analysis to identify the most striking patterns that illustrate the divisions in the country. I oversaw the design and development of multiple interactive graphics and wrote the copy.',
     publication: 'For The Wall Street Journal',
     preview: '/images/thumbs/PoliticsPull.png',
     images: [
-    '/images/thumbs/swipers/politicspull_map1.gif',
-    '/images/thumbs/swipers/politicspull_map2.gif',
-    '/images/thumbs/swipers/politicspull_bubbles.gif'
+    '/images/thumbs/swipers/politicspull_map1.mp4',
+    '/images/thumbs/swipers/politicspull_map2.mp4',
+    '/images/thumbs/swipers/politicspull_bubbles.mp4'
     ],
     tags: ['data analysis', 'data viz', 'interactive', 'writing', 'editing'],
     link: 'https://www.wsj.com/graphics/polarized-presidential-elections/?&reflink=desktopwebshare_twitter'
     },
     {
-    id: 10,
+    id: 12,
     title: 'President Trump’s tweets',
 
     description: 'To mark President Donald Trump’s first year in office, I examined his Twitter activity. Trump’s use of social media was a hallmark of his presidency, and the informal nature of his tweets was a departure from precedent. I  analyzed more than 2,300 tweets to identify patterns in timing and content. I conducted the data analysis, wrote the story and created multiple graphics components.',
@@ -167,6 +196,8 @@
     if (project.images && project.images.length) return project.images;
     return project.preview ? [project.preview] : [];
   };
+
+  const isVideo = (src = '') => src.toLowerCase().endsWith('.mp4');
 
   slideIndex = projects.reduce((acc, project) => {
     acc[project.id] = 0;
@@ -229,11 +260,27 @@
                     </svg>
                   </button>
                   {#if getImages(project).length}
-                    <img
-                      src={getImages(project)[slideIndex[project.id] ?? 0]}
-                      alt={project.title}
-                      class="project-slide"
-                    />
+                    {@const currentMedia = getImages(project)[slideIndex[project.id] ?? 0]}
+                    {#key currentMedia}
+                      {#if isVideo(currentMedia)}
+                        <video
+                          src={currentMedia}
+                          class="project-slide"
+                          autoplay
+                          loop
+                          muted
+                          playsinline
+                          preload="metadata"
+                          aria-label={project.title}
+                        ></video>
+                      {:else}
+                        <img
+                          src={currentMedia}
+                          alt={project.title}
+                          class="project-slide"
+                        />
+                      {/if}
+                    {/key}
                   {/if}
                   <button
                     type="button"
@@ -264,7 +311,7 @@
             {#if expandedId === project.id}
               <div class="project-info">
                 <p class="publication">{project.publication}</p>
-                <p class="description">{project.description}</p>
+                <p class="description">{@html project.description}</p>
                 {#if project.awards}
                   <div class="awards-list">
                     {#each (Array.isArray(project.awards) ? project.awards : [project.awards]) as award}
@@ -486,6 +533,20 @@ p {
     margin-bottom: 1.25rem;
     font-family: 'Poynter Gothic Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.05rem;
+  }
+
+  .description :global(a) {
+    color: #9b1312;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .description :global(a:hover) {
+    color: #918f8f;
+  }
+
+  .description :global(a:visited) {
+    color: #0a0a0a;
   }
 
   .awards-list {

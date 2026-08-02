@@ -19,7 +19,9 @@
     '/images/thumbs/homepage/trumptweets_header.png',
     '/images/thumbs/homepage/usautos_colors.png',
     '/images/thumbs/homepage/usautos_scrolly.png',
-    '/images/thumbs/homepage/youngcancer_intro.png'
+    '/images/thumbs/homepage/youngcancer_intro.png',
+    '/images/thumbs/homepage/flocktraffic.png',
+    '/images/thumbs/homepage/datacenters26_intro.png',
   ];
   const navLinks = [
     { label: 'work', page: 'projects' },
